@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vogella.StayActiveApp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StayActive">
+        <activity android:name=".SittingWorkoutActivity"></activity>
+        <activity android:name=".SecondCategory" />
+        <activity android:name=".WorkoutsStatsActivity" />
+        <activity android:name=".MyWorkoutDisplayActivity" />
+        <activity android:name=".WorkoutRecycler" />
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Player"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

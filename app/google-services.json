@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "490507556357",
+    "firebase_url": "https://stayactive-c6b34-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "stayactive-c6b34",
+    "storage_bucket": "stayactive-c6b34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490507556357:android:1d2cafb226359da252ae6c",
+        "android_client_info": {
+          "package_name": "co.smallacademy.myvideoslibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490507556357-nks5djcc83qpbbuuhnfq83f7mhoi5hmu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvzPgmxzvNsbFdLn3_mqlBuMJFUW4XQSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490507556357-nks5djcc83qpbbuuhnfq83f7mhoi5hmu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490507556357:android:3ade49706ae791c352ae6c",
+        "android_client_info": {
+          "package_name": "com.vogella.firebasework"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490507556357-nks5djcc83qpbbuuhnfq83f7mhoi5hmu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvzPgmxzvNsbFdLn3_mqlBuMJFUW4XQSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490507556357-nks5djcc83qpbbuuhnfq83f7mhoi5hmu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490507556357:android:5cd0fe8246f7af3152ae6c",
+        "android_client_info": {
+          "package_name": "com.vogella.realtimedatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490507556357-nks5djcc83qpbbuuhnfq83f7mhoi5hmu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvzPgmxzvNsbFdLn3_mqlBuMJFUW4XQSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490507556357-nks5djcc83qpbbuuhnfq83f7mhoi5hmu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490507556357:android:d3472c725011b23452ae6c",
+        "android_client_info": {
+          "package_name": "com.vogella.stayactive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490507556357-nks5djcc83qpbbuuhnfq83f7mhoi5hmu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvzPgmxzvNsbFdLn3_mqlBuMJFUW4XQSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490507556357-nks5djcc83qpbbuuhnfq83f7mhoi5hmu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

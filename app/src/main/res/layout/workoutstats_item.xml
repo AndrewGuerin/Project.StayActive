@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/workoutName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Workout name = " />
+            <TextView
+                android:id="@+id/statsWorkoutTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/workoutName"
+                android:layout_margin="10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/workoutScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statsWorkoutTitle"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Workout score =" />
+            <TextView
+                android:id="@+id/statsWorkoutScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/workoutScore"
+                android:layout_margin="10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/workoutSteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statsWorkoutScore"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:text="Workout step count ="
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/statsSteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/workoutSteps"
+                android:layout_margin="10dp"
+                android:textSize="16sp" />
+
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

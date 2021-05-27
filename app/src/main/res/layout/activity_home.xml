@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/QuoteView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/randomeQuote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/randomeQuote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:text="Randomize Quote"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/workoutList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="100dp"
+        android:text="Standard Workouts"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/yoga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/randomeQuote" />
+
+    <Button
+        android:id="@+id/yoga"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="100dp"
+        android:text="Yoga Workouts"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/sittingWbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workoutList"
+        app:layout_constraintVertical_bias="0.255" />
+
+    <Button
+        android:id="@+id/sittingWbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="100dp"
+        android:text="Sitting Workouts"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/myWorkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yoga"
+        app:layout_constraintVertical_bias="0.426" />
+
+    <Button
+        android:id="@+id/myWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:text="My Workouts"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/workoutStats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sittingWbutton"
+        app:layout_constraintVertical_bias="0.539" />
+
+    <Button
+        android:id="@+id/workoutStats"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:text="Recent Workouts"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myWorkout"
+        app:layout_constraintVertical_bias="0.268" />
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
