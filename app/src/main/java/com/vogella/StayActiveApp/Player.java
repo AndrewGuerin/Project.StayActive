@@ -67,24 +67,24 @@ public class Player extends AppCompatActivity {
 
         databaseReference = FirebaseDatabase.getInstance().getReference().child("WorkoutData");
 
-        Intent i = getIntent();
-        final Bundle data = i.getExtras();
-        Video v = (Video) data.getSerializable("videoData");
+        Intent intent = getIntent();
+        final Bundle data = intent.getExtras();
+        Video vid = (Video) data.getSerializable("videoData");
 
-        getSupportActionBar().setTitle(v.getTitle());
+        getSupportActionBar().setTitle(vid.getTitle());
 
         //final TextView title = findViewById(R.id.videoTitle);
         //final TextView desc = findViewById(R.id.videoDesc);
 
         videoPlayer = findViewById(R.id.fbvideoView);
 
-        videoTitle.setText(v.getTitle());
-        videoDesc.setText(v.getDescription());
-        videoUrlLink.setText(v.getVideoUrl());
+        videoTitle.setText(vid.getTitle());
+        videoDesc.setText(vid.getDescription());
+        videoUrlLink.setText(vid.getVideoUrl());
         videoUrlLink.setVisibility(View.GONE);
-        urlImage.setText(v.getImageUrl());
+        urlImage.setText(vid.getImageUrl());
         urlImage.setVisibility(View.GONE);
-        Uri videoUrl = Uri.parse(v.getVideoUrl());
+        Uri videoUrl = Uri.parse(vid.getVideoUrl());
         videoPlayer.setVideoURI(videoUrl);
         MediaController mc = new MediaController(this);
         videoPlayer.setMediaController(mc);

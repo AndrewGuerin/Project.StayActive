@@ -55,19 +55,19 @@ public class SecondCategoryActivity extends AppCompatActivity {
 
                     //Log.d(TAG, "onResponse: "+ videos);
 
-                    for (int i = 0; i< videos.length();i++){
-                        JSONObject video = videos.getJSONObject(i);
+                    for (int index = 0; index< videos.length();index++){
+                        JSONObject video = videos.getJSONObject(index);
 
-                        Video v = new Video();
+                        Video vid = new Video();
 
-                        v.setTitle(video.getString("title"));
-                        v.setDescription(video.getString("description"));
-                        v.setAuthor(video.getString("subtitle"));
-                        v.setImageUrl(video.getString("thumb"));
+                        vid.setTitle(video.getString("title"));
+                        vid.setDescription(video.getString("description"));
+                        vid.setAuthor(video.getString("subtitle"));
+                        vid.setImageUrl(video.getString("thumb"));
                         JSONArray videoUrl = video.getJSONArray("sources");
-                        v.setVideoUrl(videoUrl.getString(0));
+                        vid.setVideoUrl(videoUrl.getString(0));
 
-                        all_videos.add(v);
+                        all_videos.add(vid);
                         adapter.notifyDataSetChanged();
                     }
 
