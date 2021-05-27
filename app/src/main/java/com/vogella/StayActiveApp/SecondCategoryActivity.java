@@ -21,7 +21,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SecondCategory extends AppCompatActivity {
+public class SecondCategoryActivity extends AppCompatActivity {
     public static final String TAG = "TAG";
     RecyclerView secondCat;
     VideoAdapter adapter;

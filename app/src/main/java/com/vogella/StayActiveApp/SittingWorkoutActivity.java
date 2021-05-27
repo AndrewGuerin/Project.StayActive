@@ -71,11 +71,9 @@ public class SittingWorkoutActivity extends AppCompatActivity {
                         adapter.notifyDataSetChanged();
                     }
 
-
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
 
             }
         }, new Response.ErrorListener() {

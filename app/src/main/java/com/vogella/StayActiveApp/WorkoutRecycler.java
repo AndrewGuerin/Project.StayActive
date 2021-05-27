@@ -40,7 +40,6 @@ public class WorkoutRecycler extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
 
-
         //firebase
         reference = FirebaseDatabase.getInstance().getReference();
 
@@ -52,9 +51,6 @@ public class WorkoutRecycler extends AppCompatActivity {
 
         //get Data
         GetDataFromFB();
-
-
-
     }
 
     private void GetDataFromFB() {
@@ -95,7 +91,6 @@ public class WorkoutRecycler extends AppCompatActivity {
                 recyclerAdapter.notifyDataSetChanged();
             }
         }
-
         myWorkoutsRetrieveArrayList = new ArrayList<>();
     }
 }

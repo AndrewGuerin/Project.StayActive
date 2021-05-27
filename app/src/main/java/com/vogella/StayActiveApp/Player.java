@@ -44,7 +44,6 @@ public class Player extends AppCompatActivity {
     DatabaseReference databaseReference;
     WorkoutData workoutData;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +60,6 @@ public class Player extends AppCompatActivity {
         videoDesc = findViewById(R.id.fbvideoDesc);
         videoUrlLink = findViewById(R.id.fbvideoUrlfb);
         urlImage = findViewById(R.id.fbimageUrl);
-
 
         addToRegime = findViewById(R.id.beginworkout);
         goToWorkout = findViewById(R.id.buttonToWorkout);
@@ -158,5 +156,4 @@ public class Player extends AppCompatActivity {
             super.onBackPressed();
         }
     }
-
 }

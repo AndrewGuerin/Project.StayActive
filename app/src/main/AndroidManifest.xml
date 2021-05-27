@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StayActive">
         <activity android:name=".SittingWorkoutActivity"></activity>
-        <activity android:name=".SecondCategory" />
+        <activity android:name=".SecondCategoryActivity" />
         <activity android:name=".WorkoutsStatsActivity" />
         <activity android:name=".MyWorkoutDisplayActivity" />
         <activity android:name=".WorkoutRecycler" />

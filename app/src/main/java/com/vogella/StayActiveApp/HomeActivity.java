@@ -10,8 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class HomeActivity extends AppCompatActivity {
     Button btn_workoutList;
@@ -23,8 +21,6 @@ public class HomeActivity extends AppCompatActivity {
     private TextView qtextView;
     Button randomeQuote;
 
-
-    //
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,8 +34,6 @@ public class HomeActivity extends AppCompatActivity {
 
         qtextView = findViewById(R.id.QuoteView);
         randomeQuote = findViewById(R.id.randomeQuote);
-
-
 
         btn_workoutList.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,7 +62,7 @@ public class HomeActivity extends AppCompatActivity {
         btn_yogaList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, SecondCategory.class);
+                Intent intent = new Intent(HomeActivity.this, SecondCategoryActivity.class);
                 startActivity(intent);
             }
         });
@@ -88,13 +82,12 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
     public void showQuote() {
         shuffleQuotes();
         qtextView.setText(quoteArray[0].getQuote());
     }
+
     Quotes q1 = new Quotes("Eat well. Move Daily. Hydrate Often. Sleep Lots. Love Your Body. Repeat for Life.");
     Quotes q2 = new Quotes("The greatest weapon against stress is our ability to choose one thought over another.");
     Quotes q3 = new Quotes("Two things you can control.  Attitude and Effort.");
@@ -113,6 +106,4 @@ public class HomeActivity extends AppCompatActivity {
     public void shuffleQuotes() {
         Collections.shuffle(Arrays.asList(quoteArray));
     }
-
-
 }

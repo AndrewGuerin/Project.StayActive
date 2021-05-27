@@ -103,13 +103,11 @@ public class MyWorkoutDisplayActivity extends AppCompatActivity implements Senso
         videoDesc.setText(work.getDescription());
         videoUrlLink.setText(work.getVideoUrl());
         urlImage.setText(work.getImageUrl());
-        //muscle.setVisibility(View.GONE);
 
         //timer
         tvCountdown = findViewById(R.id.tvCountdown);
         buttonStartStop = findViewById(R.id.buttonStart);
         buttonReset = findViewById(R.id.buttonReset);
-
 
         Uri newVideoUrl = Uri.parse(work.getUrl());
 
@@ -259,5 +257,4 @@ public class MyWorkoutDisplayActivity extends AppCompatActivity implements Senso
         String timeLeftover = String.format(Locale.getDefault(),"%02d:%02d", minutes, seconds);
         tvCountdown.setText(timeLeftover);
     }
-
 }

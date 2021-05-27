@@ -21,7 +21,6 @@ public class WorkoutStatsAdapter extends RecyclerView.Adapter<WorkoutStatsAdapte
         this.statsArrayList = statsArrayList;
     }
 
-
     @NonNull
     @Override
     public WorkoutStatsAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -52,7 +51,5 @@ public class WorkoutStatsAdapter extends RecyclerView.Adapter<WorkoutStatsAdapte
             stepData = itemView.findViewById(R.id.statsSteps);
             sv = itemView;
         }
-
-
     }
 }

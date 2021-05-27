@@ -27,8 +27,6 @@ public class WorkoutRecylerAdapter extends RecyclerView.Adapter<WorkoutRecylerAd
         this.fbWorkoutList = fbWorkoutList;
     }
 
-
-
     @NonNull
     @Override
     public WorkoutRecylerAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -44,11 +42,6 @@ public class WorkoutRecylerAdapter extends RecyclerView.Adapter<WorkoutRecylerAd
         holder.fbVidUrlView.setText(fbWorkoutList.get(position).getUrl());
         Picasso.get().load(fbWorkoutList.get(position).getImageUrl()).into(holder.imageView);
 
-        //imageView Glide
-        //Glide.with(context)
-        //        .load(fbWorkoutList.get(position).getImageUrl())
-        //        .into(holder.imageView);
-
         holder.wv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,7 +54,6 @@ public class WorkoutRecylerAdapter extends RecyclerView.Adapter<WorkoutRecylerAd
         });
     }
 
-
     @Override
     public int getItemCount() {
         return fbWorkoutList.size();
@@ -73,7 +65,6 @@ public class WorkoutRecylerAdapter extends RecyclerView.Adapter<WorkoutRecylerAd
         TextView fbTitleView, fbDescView, fbVidUrlView;
         View wv;
 
-
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.imageView);
@@ -83,11 +74,6 @@ public class WorkoutRecylerAdapter extends RecyclerView.Adapter<WorkoutRecylerAd
             fbVidUrlView = itemView.findViewById(R.id.fbvideoUrl);
             fbVidUrlView.setVisibility(View.GONE);
             wv = itemView;
-            //itemView.setOnClickListener(this);
-
         }
-
-
     }
-
 }

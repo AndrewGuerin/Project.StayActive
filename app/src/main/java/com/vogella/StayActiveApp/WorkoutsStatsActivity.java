@@ -44,7 +44,6 @@ public class WorkoutsStatsActivity extends AppCompatActivity {
         ClearAll();
 
         GetDataFromFB();
-
     }
 
     private void GetDataFromFB() {
