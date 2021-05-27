@@ -94,7 +94,7 @@ public class MyWorkoutDisplayActivity extends AppCompatActivity implements Senso
         Intent intent = getIntent();
 
         final Bundle data = intent.getExtras();
-        MyWorkoutsRetrieve work = (MyWorkoutsRetrieve) data.getSerializable("WorkoutData");
+        MyWorkouts work = (MyWorkouts) data.getSerializable("WorkoutData");
 
         getSupportActionBar().setTitle(work.getTitle());
 

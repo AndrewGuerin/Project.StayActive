@@ -25,7 +25,7 @@ public class WorkoutRecycler extends AppCompatActivity {
     private DatabaseReference reference;
 
     //variables
-    private ArrayList<MyWorkoutsRetrieve> myWorkoutsRetrieveArrayList;
+    private ArrayList<MyWorkouts> myWorkoutsArrayList;
     private WorkoutRecylerAdapter recyclerAdapter;
     private Context context;
 
@@ -44,7 +44,7 @@ public class WorkoutRecycler extends AppCompatActivity {
         reference = FirebaseDatabase.getInstance().getReference();
 
         //ArrayList
-        myWorkoutsRetrieveArrayList = new ArrayList<>();
+        myWorkoutsArrayList = new ArrayList<>();
 
         //clear Arraylist
         ClearAll();
@@ -61,16 +61,16 @@ public class WorkoutRecycler extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 ClearAll();
                 for(DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    MyWorkoutsRetrieve myWorkoutsRetrieve = new MyWorkoutsRetrieve();
+                    MyWorkouts myWorkouts = new MyWorkouts();
 
-                    myWorkoutsRetrieve.setImageUrl(snapshot.child("imageUrl").getValue().toString());
-                    myWorkoutsRetrieve.setTitle(snapshot.child("title").getValue().toString());
-                    myWorkoutsRetrieve.setDescription(snapshot.child("description").getValue().toString());
-                    myWorkoutsRetrieve.setUrl(snapshot.child("url").getValue().toString());
+                    myWorkouts.setImageUrl(snapshot.child("imageUrl").getValue().toString());
+                    myWorkouts.setTitle(snapshot.child("title").getValue().toString());
+                    myWorkouts.setDescription(snapshot.child("description").getValue().toString());
+                    myWorkouts.setUrl(snapshot.child("url").getValue().toString());
 
-                    myWorkoutsRetrieveArrayList.add(myWorkoutsRetrieve);
+                    myWorkoutsArrayList.add(myWorkouts);
                 }
-                recyclerAdapter = new WorkoutRecylerAdapter(getApplicationContext(), myWorkoutsRetrieveArrayList);
+                recyclerAdapter = new WorkoutRecylerAdapter(getApplicationContext(), myWorkoutsArrayList);
                 recyclerView.setAdapter(recyclerAdapter);
                 recyclerAdapter.notifyDataSetChanged();
             }
@@ -84,13 +84,13 @@ public class WorkoutRecycler extends AppCompatActivity {
     }
 
     private void ClearAll() {
-        if(myWorkoutsRetrieveArrayList != null) {
-            myWorkoutsRetrieveArrayList.clear();
+        if(myWorkoutsArrayList != null) {
+            myWorkoutsArrayList.clear();
 
             if(recyclerAdapter != null) {
                 recyclerAdapter.notifyDataSetChanged();
             }
         }
-        myWorkoutsRetrieveArrayList = new ArrayList<>();
+        myWorkoutsArrayList = new ArrayList<>();
     }
 }

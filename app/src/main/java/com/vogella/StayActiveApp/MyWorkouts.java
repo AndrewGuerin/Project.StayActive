@@ -2,17 +2,17 @@ package com.vogella.StayActiveApp;
 
 import java.io.Serializable;
 
-public class MyWorkoutsRetrieve implements Serializable {
+public class MyWorkouts implements Serializable {
     //Model class
 
     private String title, imageUrl, url, description, videoUrl;
 
     //construtor
-    public MyWorkoutsRetrieve() {
+    public MyWorkouts() {
 
     }
 
-    public MyWorkoutsRetrieve(String title, String imageUrl, String url, String description, String videoUrl) {
+    public MyWorkouts(String title, String imageUrl, String url, String description, String videoUrl) {
         this.title = title;
         this.imageUrl = imageUrl;
         this.url = url;

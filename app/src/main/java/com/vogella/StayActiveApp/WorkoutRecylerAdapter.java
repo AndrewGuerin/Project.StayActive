@@ -20,9 +20,9 @@ public class WorkoutRecylerAdapter extends RecyclerView.Adapter<WorkoutRecylerAd
 
     private static final String Tag = "RecycleView";
     private Context context;
-    private ArrayList<MyWorkoutsRetrieve> fbWorkoutList;
+    private ArrayList<MyWorkouts> fbWorkoutList;
 
-    public WorkoutRecylerAdapter(Context context, ArrayList<MyWorkoutsRetrieve> fbWorkoutList) {
+    public WorkoutRecylerAdapter(Context context, ArrayList<MyWorkouts> fbWorkoutList) {
         this.context = context;
         this.fbWorkoutList = fbWorkoutList;
     }
